@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>收货地址</title>
+	</head>
+	<body>
+		<div class="nameList">
+			<div class="title">
+				<img src="img/list.png" >
+			</div>
+			<div class="goods-list">
+				<p class="goods-title"><span>TCL    TXC-25JK    扫地机器人 </span><span>￥299</span></p>
+			</div>
+			<div class="details">
+				<div class="iphone">
+					<div class="browser">
+						<section class="express-area">
+							<input type="text" name="" id="" value=""  placeholder="姓名"/>
+						</section>
+						<section class="express-area">
+							<input type="text" name="" id="" value=""  placeholder="电话"/>
+						</section>
+				        <!--选择地区-->
+				        <section class="express-area">
+				            <a id="expressArea" href="javascript:void(0)">
+				                <dl>
+				                    <dt>收货地址：</dt>
+				                    <dd>省 > 市 > 区/县</dd>
+				                </dl>
+				            </a>
+				        </section>
+						<section class="express-area">
+							<input type="text" name="" id="" value=""  placeholder="详细地址"/>
+						</section>
+						<section>
+							<div class="total">
+								<p>价格：<span class="price">299</span>元+附加费<span class="additional">15</span>元<span class="fr">共：<em class="totalNum">314</em>元</span></p>
+							</div>
+						</section>
+						<section class="notice">
+							<p>注：</p>
+							<p>1.哈尔滨市内（哈尔滨双城、阿城、呼兰除外）包邮</p>
+							<p>2.黑龙江省内（包含哈尔滨双城、阿城、呼兰）需另加15元附加费</p>
+							<p>3.黑龙江省外需另加30元附加费</p>
+						</section>
+				        <!--选择地区弹层-->
+				        <section id="areaLayer" class="express-area-box">
+				            <header>
+				                <h3>选择地区</h3>
+				                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+				                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+				            </header>
+				            <article id="areaBox">
+				                <ul id="areaList" class="area-list"></ul>
+				            </article>
+				        </section>
+				        <!--遮罩层-->
+				        <div id="areaMask" class="mask"></div>
+				        <script src="js/jquery.area.js"></script>
+				    </div>
+				</div>
+			</div>
+			<div class="btn-box">
+				<div><a href="index.html">放弃领奖</a></div>
+				<div>确认</div>
+			</div>
+		</div>
+		<script src="js/jquery.area.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

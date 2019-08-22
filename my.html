@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>我的</title>
+	</head>
+	<body class="my-body">
+		<div class="my">
+			<div class="head-box">
+				<!-- <img src="img/info.png" > -->
+				<div class="nick">
+					<div class="head-img"><img src="img/refund.png"></div>
+					<h3>财神爷</h3>
+				</div>
+			</div>
+			<div class="">
+				<div class="nav">
+					<ul>
+						<li class="active">抽奖记录</li>
+						<li>我的奖品</li>
+					</ul>
+				</div>
+				<div class="">
+					<div class="record-list">
+						<ul>
+							<li><span>TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+						</ul>
+					</div>
+					<div class="record-list none">
+						<ul>
+							<li><span>2TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>2TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>2TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>2TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+							<li><span>2TCL TXC-25JK 扫地机器人 </span><span>￥299</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+	$(function(){
+		$(".nav").find("li").on("click",function(){
+			var index = $(this).index();
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".record-list").eq(index).show().siblings().hide();
+		})
+	})
+</script>
+	</body>
+</html>

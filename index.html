@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>财神到</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="caishen">
+			<img src="img/bg.jpg">
+			<div class="type">
+				<div class="name1">
+				</div>
+				<div class="name2">
+					中大奖
+				</div>
+				<div class="name3">
+				</div>
+			</div>
+			<div class="btn cake" id="action"><img src="img/yuanbao.png" ></div>
+		</div>
+		<div class="nameList">
+			<div class="title">
+				<img src="img/title.png">
+			</div>
+			<div class="name-list">
+				<ul>
+					<li>恭喜用户：一123456789,<span>喜中：一等奖</span></li>
+					<li>恭喜用户：二123456789,<span>喜中：一等奖</span></li>
+					<li>恭喜用户：三123456789,<span>喜中：一等奖</span></li>
+					<li>恭喜用户：四123456789,<span>喜中：一等奖</span></li>
+					<li>恭喜用户：五123456789,<span>喜中：一等奖</span></li>
+					<li>恭喜用户：六123456789,<span>喜中：一等奖</span></li>
+				</ul>
+			</div>
+			<div class="">
+				<div class="rule">
+					<span class="line"></span>
+					抽奖规则
+					<span class="line"></span>
+				</div>
+				<div class="content">
+					<p>1. 活动抽奖时间：2019年11月20日00：00——2019年12月30日23:59； </p>
+					<p>2.活动参与方式：每个用户每天有3次免费抽奖机会，转发给一个好友成功参与活动，即可获得1次抽奖机会；</p>
+					<p>3. 活动结束后，主办方活会在3个工作日通过官网公示的方式公布中奖结果，请耐心等待；</p>
+					<p>4.中奖规则及中奖资格的排除：</p>
+					<p>(1)中奖用户名单由系统随机抽取，中奖结果将在活动页面实时公布。</p>
+					<p>(2)凡以不正当手段（包括但不限于机器刷奖、作弊、扰乱系统、实施网络攻击等）参与本次活动的用户，主办方有权终止其参与活动，取消其获奖资格（如奖励已发放，主办方有权收回）。</p>
+				</div>
+			</div>
+		</div>
+		<div class="isYou fixed compound-wrm">
+			<div class="box">
+				<div class="img"><img src="img/compound-warm-img.png" ></div>
+				<h3>恭喜您喜中</h3>
+				<h3 class="step">一等奖</h3>
+				<div class="view-btn">
+					<a href="list.html"><button type="button">查看奖品列表</button></a>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				  function autoScroll(obj){  
+						$(obj).find("ul").animate({  
+							marginTop : "-46px"  
+						},500,function(){  
+							$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+						})  
+					}  
+					$(function(){  
+						setInterval('autoScroll(".name-list")',2000);
+					}) 
+		</script>
+	</body>
+</html>
